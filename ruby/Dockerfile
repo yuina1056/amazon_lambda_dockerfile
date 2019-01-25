@@ -8,5 +8,6 @@ RUN git clone https://github.com/sstephenson/ruby-build.git /usr/local/rbenv/plu
 RUN /usr/local/rbenv/plugins/ruby-build/install.sh
 RUN rbenv install 2.5.0
 RUN rbenv global 2.5.0
-RUN rbenv exec gem install bundle
+RUN rbenv exec gem update
+RUN rbenv exec gem install bundler -v 1.17.1
 CMD /bin/bash

@@ -1,1 +1,1 @@
-docker run --rm -it -v {gemfileおいてあるディレクトリ}}:/project test /bin/bash -c 'cd project; rbenv exec bundle install'
+docker run --rm -it -v {gemfileおいてあるディレクトリ}:/project test /bin/bash -c 'cd project; rbenv exec bundle install'
